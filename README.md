@@ -1,5 +1,5 @@
-# deem
-Typography Design System
+# deem™
+— typography design microsystem
 
 ## Table of Contents
 
