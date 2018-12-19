@@ -8,8 +8,23 @@ const colorPalette = {
   blue: '#1E90FF',
   green: '#64df83',
   orange: '#fd7e14',
-  yellow: '#ffc107'
+  yellow: '#ffc107',
+  beige: '#F5F5DC',
+  silver: '#708090',
+  gold: '#FFD700',
+  crimson: '#DC143C',
+  lightred: '#CD5C5C',
+  royalblue: '#4169E1',
+  steelblue: '#4682B4',
+  lightblue: '#00BFFF',
+  cornflowerblue: '#6495ED',
+  turquoise: '#40E0D0',
+  darkturquoise: '#00CED1',
+  cyan: '#00FFFF',
+  darkcyan: '#008B8B',
+  lightseagreen: '#20B2AA'
 }
+
 const colorOption = Object.keys(colorPalette)
 colorOption.forEach(color => {
   const colorPicker = document.querySelector('#color')
@@ -47,7 +62,11 @@ selectors.forEach(selector => {
       if (cssAttr === 'color') {
         const colorMap = new Map(Object.entries(colorPalette))
         for (let color of colorMap) {
-          choosenValue === color[0] ? paragraph.style.color = color[1] : null // eslint-disable-line
+          if (choosenValue === color[0]) {
+            paragraph.style.color = color[1]
+            const userInput = document.querySelector('#user-color')
+            userInput.setAttribute('placeholder', color[1])
+          }
         }
       } else {
         paragraph.style.setProperty(cssAttr, choosenValue)
@@ -56,7 +75,7 @@ selectors.forEach(selector => {
   })
 })
 
-const options = (element, { color = 'inherit', fontSize = '1rem', fontWeight = 'normal' }) => {
+const options = (element, { color = 'inherit', fontSize = '1rem', fontWeight = 'normal' }) => { // eslint-disable-line
   // Put a node as an element
   element.style.color = color
   element.style.fontSize = fontSize
@@ -93,7 +112,16 @@ buttonParagraph.addEventListener('click', (textField) => {
   })
 })
 
-// Future functionality: enter own rgb or hex
-function buildColor (name, value) { // eslint-disable-line
-  name ? colorPalette[`${name}`] = value : alert('Please enter name of your color') // eslint-disable-line
-}
+// Change color by writing color value in HEX
+const userInput = document.querySelector('#user-color')
+userInput.addEventListener('change', () => {
+  if (userInput.value !== null || undefined) {
+    let whichColor = document.querySelector('#color')
+    let paragraphs = document.querySelectorAll('.paragraph')
+    let newColor = userInput.value
+    whichColor.value = ' '
+    paragraphs.forEach(paragraph => {
+      paragraph.style.color = newColor
+    })
+  }
+})
