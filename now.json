@@ -1,13 +1,22 @@
 {
   "version": 2,
   "name": "deem",
-  "builds": [
-    { "src": "index.html", "use": "@now/static" },
-    { "src": "./app/settings.js", "use": "@now/static" },
-    { "src": "./app/designsystem.css", "use": "@now/static" }
+  "builds": [{
+      "src": "index.html",
+      "use": "@now/static"
+    },
+    {
+      "src": "./app/index.js",
+      "use": "@now/static"
+    },
+    {
+      "src": "./app/designsystem.css",
+      "use": "@now/static"
+    }
   ],
   "alias": [
     "deem.theguys.sh",
-    "deem.theguys.app"
+    "deem.theguys.app",
+    "deem.theguys.design"
   ]
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Typography Design System</title>
+    <title>deem™</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,43 +18,42 @@
     <div class="d-flex">
 
       <div class="menu-wrapper d-none d-xl-inline-block">
-        <div class="menu h-100 d-none d-xl-inline-block mt-5 pt-5">
-          <div class="menu-header"><a href="#about">About</a></div>
-          <div class="menu-header"><a href="#contribute">Contribute</a></div>
-          <div class="menu-header my-3">Sandbox</div>
-          <div class="menu-item">
+        <div class="menu">
+          <div class="menu-header mb-3"><a href="#about">About</a></div>
+          <div class="menu-header my-3 mb-5"><a href="#contribute">Contribute</a></div>
+          <div class="menu-item mt-3 mb-0">
             <label for="color">Colors</label>
             <select class="custom-select my-1 mr-sm-2" id="color">
-              <!-- append here colors in function -->
             </select>
           </div>
-          <div class="menu-item">
-            <label for="fontSize">Sizes</label>
+          <div class="menu-item mt-3 mb-0">
+            <label for="fontSize">Sizes in px</label>
             <select class="custom-select my-1 mr-sm-2" id="font-size">
-              <!-- append here sizes in function -->
             </select>
           </div>
-          <div class="menu-item">
+          <div class="menu-item mt-3 mb-0">
             <label for="fontWeight">Weights</label>
             <select class="custom-select my-1 mr-sm-2" id="font-weight">
-              <!-- append here weights in function -->
             </select>
           </div>
-          <div class="menu-item">
-            <label for="userInput">Enter own color:</label>
-            <input type="text" class="form-control" id="user-color" placeholder="HEX or name">
-            </input>
-          </div>
-          <div class="menu-item">
+          <div class="menu-item mt-3 mb-0">
             <label for="fontFamily">Fonts</label>
-            <select class="custom-select my-1 mr-sm-2" id="font-family" disabled>
-              <!-- append here weights in function -->
-              <option>Not active yet.</option>
+            <select class="custom-select my-1 mr-sm-2" id="font-family">
             </select>
+          </div>
+          <div class="menu-item mt-3 mb-0">
+            <label for="user-color">Enter own color:</label>
+            <input type="custom-select my-1 mr-sm-2" class="form-control" id="user-color">
+            </input>
           </div>
           <div class="menu-item text-center py-3">
             <button class="btn btn-lightseagreen" id="add-paragraph">Add paragraph</button>
           </div>
+          <p class="footer mt-5">
+            <a href="https://github.com/robertgrzonka">
+              robertgrzonka
+            </a>
+            © 2018</p>
         </div>
       </div>
 
@@ -63,7 +62,7 @@
           <div class="row justify-content-center align-items-center d-inline text-center py-5">
             <h1 class="header mb-0">deem</h1>
             <p class="header">
-              typography <span class="text-lightseagreen">design system</span>
+              typography design <span style="opacity: 0.1">micro</span>system
             </p>
           </div>
         </div>
@@ -90,29 +89,20 @@
             </div>
           </div>
 
-          <div class="row justify-content-center align-items-center text-center my-3">
-            <div class="alert alert-info">
+          <div class="row justify-content-center align-items-center text-center my-5">
+            <div class="alert alert-info my-2">
               Click on text above, it's fully editable! ♥️
-              <hr class="py-0 my-2">
+              <hr class="my-2">
               If you need more paragraphs, use button on the <mark>Menu</mark>.
             </div>
           </div>
         </div>
 
-        <div class="container mt-5">
-          <div class="row justify-content-center align-items-center text-center">
-            <p class="footer mt-5">
-              <a href="https://github.com/robertgrzonka">
-                robertgrzonka
-              </a>
-              © 2018</p>
-          </div>
-        </div>
       </div>
     </div>
 
     <!-- Settings -->
-    <script src="./app/settings.js"></script>
+    <script src="./app/index.js"></script>
   </body>
 
 </html>

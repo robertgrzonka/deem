@@ -1,7 +1,7 @@
 {
-  "name": "typography-design-system",
+  "name": "deem",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./app/index.js",
   "author": "robertgrzonka <hello@robertgrzonka.pl> (https://robertgrzonka.pl)",
   "license": "ISC",
   "dependencies": {

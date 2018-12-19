@@ -34,23 +34,30 @@ colorOption.forEach(color => {
   return colorPicker.appendChild(option)
 })
 
-const sizes = [ 12, 14, 16, 18, 20, 22, 24, 28, 30 ]
+const sizes = [ 'default', 12, 14, 16, 18, 20, 22, 24, 28, 30 ]
 sizes.forEach(size => {
   const sizePicker = document.querySelector('#font-size')
   let option = document.createElement('option')
   option.value = `${size}px`
-  option.innerHTML = `${size}px`
+  option.innerHTML = size
   return sizePicker.appendChild(option)
 })
 
-const weights = [ 100, 200, 300, 400, 500, 600, 700, 800, 900 ]
-weights.forEach(weight => {
-  const weightPicker = document.querySelector('#font-weight')
-  let option = document.createElement('option')
-  option.value = weight
-  option.innerHTML = weight
-  return weightPicker.appendChild(option)
-})
+const buildOptions = (selectorArray, id) => {
+  selectorArray.forEach(value => {
+    let selector = document.querySelector(`#${id}`)
+    let option = document.createElement('option')
+    option.value = value
+    option.innerHTML = value
+    return selector.appendChild(option)
+  })
+}
+
+const weights = [ 'default', 100, 200, 300, 400, 500, 600, 700, 800, 900 ]
+buildOptions(weights, 'font-weight')
+
+const fonts = [ 'default', 'Garamond, serif', 'Georgia, serif', '"Palatino Linotype", serif', '"Times New Roman", serif', 'Verdana, sans-serif', 'Arial, sans-serif', 'Helvetica, sans-serif', '"Comic Sans MS", sans-serif', 'Lato, sans-serif', 'Roboto, sans-serif', 'Montserrat, sans-serif', 'Open Sans, sans-serif', 'Courier New, monospace', 'Menlo, monospace', 'Monaco, monospace', 'Fira Mono, monospace' ]
+buildOptions(fonts, 'font-family')
 
 const selectors = document.querySelectorAll('select')
 selectors.forEach(selector => {
