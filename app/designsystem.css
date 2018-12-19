@@ -1,3 +1,39 @@
+.black {
+  color: #000000;
+}
+
+.pink {
+  color: #f03278;
+}
+
+.gray {
+  color: #343a40;
+}
+
+.white {
+  color: #f8f9fa;
+}
+
+.red {
+  color: #560818;
+}
+
+.blue {
+  color: #1E90FF;
+}
+
+.green {
+  color: '#64df83';
+}
+
+.orange {
+  color: '#fd7e14';
+}
+
+.yellow {
+  color: '#ffc107';
+}
+
 .text-black {
   color: #000000;
 }
@@ -213,9 +249,9 @@ a:active {
 
 .remove-x {
   cursor: help;
-  text-align: center;
   font-weight: 100;
-  opacity: 0.5;
+  font-size: 0.7em;
+  opacity: 0.3;
 }
 
 mark {
@@ -234,29 +270,34 @@ mark {
 
 /* Menu */
 
-.menu {
-  position: fixed;
-  max-height: 100vh;
-  z-index: 1;
-  left: 50px;
-  top: 20px;
-}
+@media all and (min-width: 950px) {
+  .menu-wrapper {
+    background-color: #f1f3f5;
+    padding: 160px;
+    min-height: 100vh;
+    z-index: 0;
+  }
+  .menu {
+    position: fixed;
+    max-height: 100vh;
+    z-index: 1;
+    left: 50px;
+    top: 20px;
+  }
 
-.menu-wrapper {
-  background-color: #f1f3f5;
-  padding: 160px;
-  min-height: 100vh;
-  z-index: 0;
-}
+  .menu .menu-header {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
 
-.menu .menu-header {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 10px;
+  .menu .menu-item {
+    margin-top: 10px;
+  }
+  .menu>button {
+    margin-top: 50px;
 }
-
-.menu .menu-item {
-  margin-top: 10px;
+  #small-screen-menu {
+    display: none;
+  }
 }
-
-/*# sourceMappingURL=designsystem.css.map */
