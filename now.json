@@ -12,6 +12,10 @@
     {
       "src": "./app/designsystem.css",
       "use": "@now/static"
+    },
+    {
+      "src": "./app/deem_wide_white.svg",
+      "use": "@now/static"
     }
   ],
   "alias": [

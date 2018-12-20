@@ -2,9 +2,9 @@
 
 <img src="./app/deem_wide.svg" width="40%">
 
-</div>
-
 > Short, but descriptive description.
+
+</div>
 
 ## Table of Contents
 
