@@ -1,4 +1,4 @@
-<img src="./app/deem.svg" width="25%">
+<img src="./app/deem.svg" width="35%">
 
 ## Table of Contents
 
