@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./app/deem_wide_white.svg" width="40%">
+<img src="./app/deem_wide.svg" width="40%">
 
 </div>
 
