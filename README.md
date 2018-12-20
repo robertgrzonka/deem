@@ -1,5 +1,4 @@
-# deem™
-— typography design microsystem
+<img src="./app/deem.svg" width="25%">
 
 ## Table of Contents
 
