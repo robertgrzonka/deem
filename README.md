@@ -2,7 +2,7 @@
 
 <img src="./app/deem_wide.svg" width="40%">
 
-> Short, but descriptive description.
+> More like editor, but I like to call it in a more <em>fancy</em> way.
 
 </div>
 
