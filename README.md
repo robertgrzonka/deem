@@ -2,9 +2,7 @@
 
 <img src="./app/deem_wide.svg" width="40%">
 
-</div>
-
-> More like editor, but I like to call it in a more fancy way.
+> More like editor, but I like to call it in a more <em>fancy</em> way.
 
 ## Table of Contents
 
