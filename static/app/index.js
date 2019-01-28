@@ -25,8 +25,8 @@ const colorPalette = {
   lightseagreen: '#20B2AA'
 }
 
-const colorOption = Object.keys(colorPalette)
-colorOption.forEach(color => {
+export const colorOptions = Object.keys(colorPalette)
+colorOptions.forEach(color => {
   const colorPicker = document.querySelector('#color')
   let option = document.createElement('option')
   option.value = color

@@ -1,11 +1,3 @@
-import Head from '../components/head'
-import Body from '../components/body'
-import Footer from '../components/footer'
+import Layout from '../components/Layout'
 
-export default () => (
-  <div>
-    <Head />
-    <Body />
-    <Footer />
-  </div>
-)
+export default () => <Layout/>

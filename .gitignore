@@ -4,4 +4,5 @@ src/
 yarn.lock
 tests/
 .next/
+v2/
 next.config.js

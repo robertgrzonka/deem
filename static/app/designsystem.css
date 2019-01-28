@@ -1,5 +1,7 @@
-* {
+*, body, html {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -23,7 +25,7 @@ div.header {
 
 h1.header {
   font-weight: 100;
-  font-family: -aple-system, serif;
+  font-family: -apple-system, serif;
   font-size: 5rem;
   z-index: 0;
   font-feature-settings: "tnum", "frac", "c2sc";
