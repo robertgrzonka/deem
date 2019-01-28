@@ -1,1 +1,0 @@
-import Select from './select'

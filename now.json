@@ -2,16 +2,8 @@
   "version": 2,
   "name": "deem",
   "builds": [{
-      "src": "index.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "./app/index.js",
-      "use": "@now/static"
-    },
-    {
-      "src": "./app/designsystem.css",
-      "use": "@now/static"
+      "src": "package.json",
+      "use": "@now/next"
     }
   ],
   "alias": [

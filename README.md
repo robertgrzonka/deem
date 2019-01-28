@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="./app/deem_wide_white.svg" width="40%">
+<img src="./app/deem_wide.svg" width="40%">
 
 </div>
 
-> Short, but descriptive description.
+> More like editor, but I like to call it in a more fancy way.
 
 ## Table of Contents
 
