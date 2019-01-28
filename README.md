@@ -4,6 +4,8 @@
 
 > More like editor, but I like to call it in a more <em>fancy</em> way.
 
+</div>
+
 ## Table of Contents
 
 ## Overview
