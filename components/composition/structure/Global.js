@@ -1,6 +1,8 @@
 import { Global, css } from '@emotion/core'
 import ds from '../../../design/DesignSystem'
 
+// This file overwrites Bootstrap styles which are importex with plugin
+
 const GlobalStyles = () =>
   <Global styles={css`
       * {

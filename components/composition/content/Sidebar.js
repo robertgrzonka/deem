@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
-import Hyperlink from '../../utils/Hyperlink'
 import ds from '../../../design/DesignSystem'
+import Hyperlink from '../../utils/Hyperlink'
 import Button from '../../utils/Button'
+import { Separator } from '../../utils/Separator'
 
 const Wrapper = styled.div`
   display: flex;
@@ -21,8 +22,6 @@ const Wrapper = styled.div`
   }
 `
 
-/** TODO: class contains hiding button (for small @media) */
-
 const Label = styled.label`
   text-align: center;
   width: 100%;
@@ -37,7 +36,7 @@ export const Form = (props) => {
     </option>
   )
   return (
-    <div className={'menu'}>
+    <div className='menu'>
       <Label htmlFor={name} id={name}>
         {name}
         <select className='custom-select'>
@@ -48,17 +47,11 @@ export const Form = (props) => {
   )
 }
 
-const Separator = styled.hr`
-  margin: 50px 10px;
-  border: 1px solid rgba(0,0,0,0.1);
-  @media (max-width: ${ds.bp('m')}) {
-    margin: 20px 5px;
-  }
-`
-
 export const Sidebar = props => (
-  <Wrapper {...props}>
-    <Hyperlink href='about' title='About' />
+  <Wrapper>
+    <Hyperlink id='home' title='Home' />
+    <Hyperlink id='the-guys' title='theGuys™' />
+    <Hyperlink id='about-us' title='About us' />
     <Separator />
     <div style={{ justifyContent: 'space-around' }}>
       {props.children}

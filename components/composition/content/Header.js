@@ -5,7 +5,6 @@ const HeaderStyle = styled.div`
   width: 100%;
   min-height: 200px;
   background: ${ds.color('dark')};
-  box-shadow: 0px 1px 3px ${ds.color('dark')};
   display: flex;
   flex-direction: column;
   justify-content: center;

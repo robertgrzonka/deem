@@ -1,52 +1,22 @@
-/** @jsx jsx */
 import ds from '../../../design/DesignSystem'
 import styled from '@emotion/styled'
-import { jsx, css } from '@emotion/core'
-import Header from './Header'
-import Note from '../../../static/notes/first_note'
 
-const mainStyles = css`
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  width: 75vw;
-  height: 100vh;
-  @media (max-width: ${ds.bp('s')}) {
-    width: 100vw;
-  }
-`
-
-const Editable = styled.div`
+const Menu = styled.div`
   width: 100%;
-  height: auto;
-  padding: 50px 100px;
+  height: 100vh;
   transition: all 0.4s;
   text-indent: 2rem;
   text-align: justify;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
   &:hover {
-    cursor: poiner;
-  }
-  @media (max-width: ${ds.bp('l')}) {
-    padding: 50px 100px;
+    cursor: pointer;
   }
   @media (max-width: ${ds.bp('s')}) {
-    padding: 50px 75px;
-  }
-  @media (max-width: ${ds.bp('xs')}) {
-    padding: 30px;
+    width: 100vw;
   }
 `
-
-const Menu = () => {
-  return (
-    <div css={mainStyles}>
-      <Header />
-      <Editable>
-        <Note />
-      </Editable>
-    </div>
-  )
-}
 
 export default Menu
