@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "deem",
+  "builds": [{
+      "src": "package.json",
+      "use": "@now/next"
+    }
+  ],
+  "alias": [
+    "deem.theguys.sh",
+    "deem.theguys.app",
+    "deem.theguys.design"
+  ]
+}
