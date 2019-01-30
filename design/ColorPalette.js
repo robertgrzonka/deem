@@ -15,13 +15,19 @@ export default {
   primary: {
     base: 'mediumturquoise',
     light: 'paleturquoise',
-    dark: 'darkcyan'
+    dark: 'darkturquoise'
   },
 
   secondary: {
-    base: 'deepskyblue',
-    light: 'lightskyblue',
-    dark: 'royalblue'
+    base: 'cyan',
+    light: 'lightcyan',
+    dark: 'darkcyan'
+  },
+
+  pinky: {
+    base: 'lightpink',
+    light: 'palevioletred',
+    dark: 'deeppink'
   },
 
   text: {

@@ -1,8 +1,8 @@
-const test = [{ black: '#000' }, { white: '#fff' }]
-console.log(test)
+const array = [{ black: '#000' }, { white: '#fff' }]
+console.log(array)
 
-const getKeys = test.map(key =>
-  <p>{Object.keys(key)}: {Object.values(key)}</p>
+const getItems = array.map(item =>
+  <p>{Object.keys(item)}: {Object.values(item)}</p>
 )
 
-export const Paragraphs = <div>{getKeys}</div>
+export const Paragraphs = <div>{getItems}</div>

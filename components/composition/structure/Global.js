@@ -1,6 +1,8 @@
 import { Global, css } from '@emotion/core'
 import ds from '../../../design/DesignSystem'
 
+// This file overwrites Bootstrap styles which are importex with plugin
+
 const GlobalStyles = () =>
   <Global styles={css`
       * {
@@ -11,46 +13,47 @@ const GlobalStyles = () =>
         padding: 0;
         max-width: 100vw;
         min-height: 100vh;
-        background: white;
-        line-height: ${ds.get('type.fontWeight.paragraph')};
+        background: white;        
         font-family: ${ds.get('type.fontFamily.system')};
         color: ${ds.brand('dark')};
       }
       p {
-        font-size: ${ds.fontSize('base')};
-        font-weight: ${ds.get('type.fontWeight.normal')};
+        font-size: ${ds.fontSize('s')};
+        font-weight: ${ds.get('type.fontWeight.light')};
         line-height: ${ds.get('type.fontWeight.paragraph')};
-        font-family: ${ds.get('type.fontFamily.system')};
         letter-spacing: ${ds.get('type.letterSpacing.normal')};
         color: ${ds.brand('dark')};
       }
       a {
-        color: ${ds.color('dark', 'lighter')};
-        text-decoration: none;
-        font-size: ${ds.fontSize('m')};
+        font-size: ${ds.fontSize('base')};
+        color: ${ds.color('dark', 'light')};
         font-weight: ${ds.get('type.fontWeight.bold')};
-        font-variant-caps: all-small-caps;
-        transition: all 0.3s;
+        font-family: ${ds.get('type.fontFamily.serif')};
+        font-variant: small-caps;
+        text-transform: uppercase;
+        text-decoration: none;
+        background-color: unset;
+        padding: 2px;
+        border-radius: 2px;
+        transition: all 0.4s;
       }
       a:hover {
-        color: ${ds.color('primary', 'dark')};
+        color: ${ds.color('dark', 'base')};
+        background-color: ${ds.color('bright', 'darker')};
         text-decoration: none;
-        background-color: ${ds.color('bright')};
-        border-radius: 5px;
       }
 
       select {
-        background: ${ds.color('bright', 'darker')};
-        color: ${ds.color('dark')};
-        padding: 5px;
-        margin: 10px;
-        font-size: ${ds.fontSize('s')};
+        padding: 0px;
+        margin: 5px;
         text-align: center;
+        font-size: ${ds.fontSize('xs')};
       }
+      
       h1, h2, h3, h4, h5, h6 {
         letter-spacing: ${ds.get('type.letterSpacing.big')};
         font-weight: ${ds.get('type.fontWeight.headings')};
-        color: ${ds.color('dark', 'light')};
+        color: ${ds.color('dark', 'base')};
         margin: 2rem 0rem;
       }
       `}

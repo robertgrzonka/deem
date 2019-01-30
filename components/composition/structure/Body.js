@@ -1,24 +1,35 @@
 import styled from '@emotion/styled'
-import { Sidebar, Form } from '../content/Sidebar'
-import ds from '../../../design/DesignSystem'
+import { Sidebar } from '../content/Sidebar'
+import { MiniSidebar } from '../content/MiniSidebar'
 import Menu from '../content/Menu'
-// import { Paragraphs } from '../../utils/KeyValues'
+import { Links } from '../content/SidebarLinks'
 
 const BodyStyle = styled.div`
   display: flex;
   flex-direction: row;
 `
 
+const allLinks = [
+  { name: 'Color', options: 'colors' },
+  { name: 'Weight', options: 'fontWeights' },
+  { name: 'Sizes', options: 'fontSizes' }
+]
+
+/**
+ * @param {string[]} props
+ * @param {string} props.children
+*/
+
 const Body = (props) => {
   return (
-    <BodyStyle {...props}>
+    <BodyStyle>
       <Sidebar>
-        {/* {Paragraphs} */}
-        <Form options={ds.get('type.listOptions.colors')} name='Colors' />
-        <Form options={ds.get('type.listOptions.fontWeights')} name='Font-weights' />
-        <Form options={ds.get('type.listOptions.fontSizes')} name='Font-sizes' />
+        <Links links={allLinks} />
       </Sidebar>
-      <Menu />
+      <MiniSidebar />
+      <Menu>
+        {props.children}
+      </Menu>
     </BodyStyle>
   )
 }

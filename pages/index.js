@@ -1,3 +1,3 @@
-import Layout from '../components/Layout'
+import Index from './home'
 
-export default () => <Layout/>
+export default () => <Index/>

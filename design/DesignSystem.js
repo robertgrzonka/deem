@@ -16,23 +16,22 @@ const transitions = {
 const palette = colorPalette
 
 const options = {
-  colors: ['default', 'black', 'white', 'green'],
+  colors: ['default', 'black', 'white', 'pink'],
   fontWeights: [ 'default', 100, 200, 300, 400, 500, 600, 700, 800, 900 ],
   fontSizes: [ 'default', 12, 14, 16, 18, 20, 22, 24, 28, 30 ]
 }
 
 export const designSystem = {
   type: {
-    baseFontSize: '1',
+    baseFontSize: '18px',
 
     sizes: {
-      xs: '0.8',
-      s: '0.9',
-      base: '1',
-      m: '1.1',
-      l: '1.2',
-      xl: '1.3',
-      xxl: '1.4'
+      xs: '14px',
+      s: '16px',
+      base: '18px',
+      m: '22px',
+      l: '26px',
+      xl: '30px'
     },
 
     fontFamily,
@@ -40,9 +39,9 @@ export const designSystem = {
     fontFamilyHeadings: fontFamily.mono,
 
     lineHeight: {
-      normal: 1.3,
-      paragraph: 1.45,
-      headings: 1.6
+      normal: '1.3rem',
+      paragraph: '1.45rem',
+      headings: '1.6rem'
     },
 
     fontWeight: {
@@ -71,15 +70,19 @@ export const designSystem = {
       background: {
         bright: palette.background.base,
         dark: palette.background.dark
+      },
+      link: {
+        base: palette.link.base,
+        over: palette.link.over
       }
     }
   },
 
   breakpoints: {
-    xs: 600,
-    s: 850,
-    m: 1050,
-    l: 1250
+    xs: '600px',
+    s: '850px',
+    m: '1050px',
+    l: '1350px'
   },
 
   zIndex: {
@@ -90,7 +93,7 @@ export const designSystem = {
 
   spacing: {
     baseline: 20,
-    padding: '0.3em',
+    padding: '0.3rem',
     scale: [0, 8, 16, 24, 32, 40]
   },
 
@@ -113,6 +116,4 @@ export const designSystem = {
   borderRadius: '0.35rem'
 }
 
-export default new DesignSystem(designSystem, {
-  fontSizeUnit: 'rem'
-})
+export default new DesignSystem(designSystem)

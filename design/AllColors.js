@@ -21,5 +21,3 @@ const buildParagraphs = (object) => {
 }
 
 buildParagraphs(colors)
-
-/**  */

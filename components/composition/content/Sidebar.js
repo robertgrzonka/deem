@@ -1,7 +1,8 @@
 import styled from '@emotion/styled'
-import Hyperlink from '../../utils/Hyperlink'
 import ds from '../../../design/DesignSystem'
+import Hyperlink from '../../utils/Hyperlink'
 import Button from '../../utils/Button'
+import { Separator } from '../../utils/Separator'
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,15 +17,13 @@ const Wrapper = styled.div`
   border-right: 1px solid rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  @media (max-width: ${ds.bp('s')}px) {
+  @media (max-width: ${ds.bp('s')}) {
     display: none;
   }
 `
 
-/** TODO: class contains hiding button (for small @media) */
-
 const Label = styled.label`
-  text-align: left;
+  text-align: center;
   width: 100%;
 `
 
@@ -37,7 +36,7 @@ export const Form = (props) => {
     </option>
   )
   return (
-    <div className={'menu'}>
+    <div className='menu'>
       <Label htmlFor={name} id={name}>
         {name}
         <select className='custom-select'>
@@ -49,14 +48,16 @@ export const Form = (props) => {
 }
 
 export const Sidebar = props => (
-  <Wrapper {...props}>
-    <Hyperlink href='about' title='About' />
-    <hr />
+  <Wrapper>
+    <Hyperlink id='home' title='Home' />
+    <Hyperlink id='the-guys' title='theGuys™' />
+    <Hyperlink id='about-us' title='About us' />
+    <Separator />
     <div style={{ justifyContent: 'space-around' }}>
       {props.children}
     </div>
-    <hr />
-    <Button color='mediumturquoise'>
+    <Separator />
+    <Button color={ds.color('primary', 'base')} outline>
       Add paragraph
     </Button>
   </Wrapper>
