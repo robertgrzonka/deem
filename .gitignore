@@ -1,8 +1,4 @@
 node_modules/
-pages/
-src/
-yarn.lock
-tests/
 .next/
-v2/
+yarn.lock
 next.config.js

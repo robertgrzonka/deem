@@ -1,5 +1,6 @@
 {
   "name": "deem",
+  "description": "typography design system",
   "version": "1.0.0",
   "main": "./pages/index.js",
   "author": "robertgrzonka <hello@theguys.sh> (https://theguys.design)",
@@ -16,13 +17,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "test": "jest",
-    "flow": "yarn run flow"
+    "start": "next start"
   },
   "devDependencies": {
-    "design-system-utils": "^1.2.0",
-    "flow-bin": "^0.91.0",
-    "jest": "^23.6.0"
+    "design-system-utils": "^1.2.0"
   }
 }
