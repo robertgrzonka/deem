@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Sidebar } from '../content/Sidebar'
 import { MiniSidebar } from '../content/MiniSidebar'
 import Menu from '../content/Menu'
-import { Links } from '../content/SidebarLinks'
+import { Options } from '../content/SidebarLinks'
 
 const BodyStyle = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ const Body = (props) => {
   return (
     <BodyStyle>
       <Sidebar>
-        <Links links={allLinks} />
+        <Options options={allLinks} />
       </Sidebar>
       <MiniSidebar />
       <Menu>

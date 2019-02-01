@@ -3,15 +3,17 @@ import ds from '../../../design/DesignSystem'
 
 const HeaderStyle = styled.div`
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
   background: ${ds.color('dark')};
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
   align-items: center;
   align-content: center;
   align-self: center;
+  box-shadow: 0px 1px 3px ${ds.color('dark', 'lighter')};
   @media (max-width: ${ds.bp('m')}) {
     max-height: 25%;
   }
@@ -21,13 +23,13 @@ const HeaderStyle = styled.div`
 `
 
 const Image = styled.img`
-  width: 30%;
+  width: 40%;
   overflow: hidden;
   @media (max-width: ${ds.bp('m')}) {
     width: 50%;
   }
   @media (max-width: ${ds.bp('s')}) {
-    max-width: 90%;
+    max-width: 100%;
   }
 `
 

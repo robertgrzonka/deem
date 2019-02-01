@@ -39,9 +39,18 @@ export const designSystem = {
     fontFamilyHeadings: fontFamily.mono,
 
     lineHeight: {
-      normal: '1.3rem',
-      paragraph: '1.45rem',
-      headings: '1.6rem'
+      small: 1.3,
+      normal: 1.45,
+      paragraph: 1.45,
+      headings: 1.7
+    },
+
+    letterSpacing: {
+      small: '0.03rem',
+      normal: '0.0625rem',
+      paragraph: '0.0625rem',
+      big: '0.15rem',
+      headings: '0.15rem'
     },
 
     fontWeight: {
@@ -49,12 +58,6 @@ export const designSystem = {
       normal: 400,
       bold: 500,
       headings: 700
-    },
-
-    letterSpacing: {
-      small: '0.03rem',
-      normal: '0.0625rem',
-      big: '0.15rem'
     },
 
     listOptions: options

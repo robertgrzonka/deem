@@ -4,11 +4,18 @@
   "builds": [{
       "src": "next.config.js",
       "use": "@now/next"
+    },
+    {
+      "src": "static/logo/deem_wide_white.svg",
+      "use": "@now/static"
     }
   ],
   "alias": [
     "deem.theguys.sh",
     "deem.theguys.app",
     "deem.theguys.design"
-  ]
+  ],
+  "github": {
+    "autoAlias": false
+  }
 }

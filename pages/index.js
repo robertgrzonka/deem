@@ -1,3 +1,3 @@
 import Index from './home'
 
-export default () => <Index/>
+export default () => <Index />

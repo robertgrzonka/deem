@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   width: 25%;
   height: 100vh;
-  background: #f1f3f5;
+  background: ${ds.color('bright', 'dark')};
   border-right: 1px solid rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
@@ -39,7 +39,7 @@ export const Form = (props) => {
     <div className='menu'>
       <Label htmlFor={name} id={name}>
         {name}
-        <select className='custom-select'>
+        <select>
           {listItems}
         </select>
       </Label>
@@ -57,7 +57,7 @@ export const Sidebar = props => (
       {props.children}
     </div>
     <Separator />
-    <Button color={ds.color('primary', 'base')} outline>
+    <Button color={ds.color('primary', 'base')}>
       Add paragraph
     </Button>
   </Wrapper>

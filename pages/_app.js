@@ -1,9 +1,8 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import '../style.css'
 
 export default class DeemApp extends App {
-  static async getInitialProps({ Component, ctx }) {
+  static async getInitialProps ({ Component, ctx }) {
     let pageProps = {}
 
     if (Component.getInitialProps) {

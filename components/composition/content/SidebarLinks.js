@@ -19,16 +19,17 @@ export const addNewLink = (list, newLink) => {
 // ---
 
 /**
- * Endpoint of creating link list.
+ * Endpoint of creating options list.
  * @param {Object[string]} props
  */
 
-export const Links = (props) => {
-  const links = props.links
-  const makeList = links.map(link =>
+export const Options = (props) => {
+  const options = props.options
+  const makeList = options.map(option =>
     <Form
-      options={ds.get(`type.listOptions.${link.options}`)}
-      name={link.name}
+      options={ds.get(`type.listOptions.${option.options}`)}
+      name={option.name}
+      key={option.name.toLowerCase()}
     />
   )
   return (

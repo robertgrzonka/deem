@@ -3,7 +3,8 @@ import ds from '../../design/DesignSystem'
 
 export const Separator = styled.hr`
   margin: 50px 10px;
-  border: 1px solid rgba(0,0,0,0.1);
+  width: 50%;
+  border: 1px solid ${ds.color('bright', 'darker')};
   @media (max-width: ${ds.bp('m')}) {
     margin: 20px 5px;
   }

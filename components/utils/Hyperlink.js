@@ -1,4 +1,6 @@
+/** @jsx jsx */
 import Link from 'next/link'
+import { jsx } from '@emotion/core'
 
 const Hyperlink = (props) => {
   const id = props.id
