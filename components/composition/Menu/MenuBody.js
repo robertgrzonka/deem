@@ -11,12 +11,12 @@ const MenuBody = styled.div`
   justify-items: center;
   align-content: center;
   flex-direction: column;
-  padding: 1% 15%;
+  padding: 5% 15%;
   @media (max-width: ${ds.bp('m')}) {
-    padding: 1% 10%;
+    padding: 5% 10%;
   }
   @media (max-width: ${ds.bp('s')}) {
-    padding: 1% 5%;
+    padding: 5% 5%;
   }
 `
 

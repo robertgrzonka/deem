@@ -1,8 +1,7 @@
 import styled from '@emotion/styled'
-import { Sidebar } from '../content/Sidebar'
-import { MiniSidebar } from '../content/MiniSidebar'
-import Menu from '../content/Menu'
-import { Options } from '../content/SidebarLinks'
+import { Sidebar } from '../Sidebar/Sidebar'
+import Menu from '../Menu/Menu'
+import { Options } from '../Sidebar/SidebarLinks'
 
 const BodyStyle = styled.div`
   display: flex;
@@ -26,7 +25,6 @@ const Body = (props) => {
       <Sidebar>
         <Options options={allLinks} />
       </Sidebar>
-      <MiniSidebar />
       <Menu>
         {props.children}
       </Menu>

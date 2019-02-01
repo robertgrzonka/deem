@@ -4,7 +4,8 @@ import ds from '../../design/DesignSystem'
 export const Separator = styled.hr`
   margin: 50px 10px;
   width: 50%;
-  border: 1px solid ${ds.color('bright', 'darker')};
+  border: 0.01rem solid ${ds.color('dark', 'lighter')};
+  background: ${ds.color('dark', 'lighter')};
   @media (max-width: ${ds.bp('m')}) {
     margin: 20px 5px;
   }

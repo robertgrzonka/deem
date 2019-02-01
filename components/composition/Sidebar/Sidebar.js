@@ -3,6 +3,7 @@ import ds from '../../../design/DesignSystem'
 import Hyperlink from '../../utils/Hyperlink'
 import Button from '../../utils/Button'
 import { Separator } from '../../utils/Separator'
+import { Toggler } from './Toggler'
 
 const Wrapper = styled.div`
   display: flex;
@@ -14,7 +15,7 @@ const Wrapper = styled.div`
   width: 25%;
   height: 100vh;
   background: ${ds.color('bright', 'dark')};
-  border-right: 1px solid rgba(0,0,0,0.1);
+  border-right: 0.01rem solid ${ds.color('bright', 'darker')};
   position: sticky;
   top: 0;
   @media (max-width: ${ds.bp('s')}) {
@@ -57,7 +58,7 @@ export const Sidebar = props => (
       {props.children}
     </div>
     <Separator />
-    <Button color={ds.color('primary', 'base')}>
+    <Button color={ds.color('dark', 'base')}>
       Add paragraph
     </Button>
   </Wrapper>

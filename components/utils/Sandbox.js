@@ -1,17 +1,17 @@
 import React from 'react'
 import ContentEditable from 'react-contenteditable'
 
-class Example extends React.Component {
+export class Header extends React.Component {
   constructor (props) {
     super(props)
     this.contentEditable = React.createRef()
     this.state = {
-      html: this.props.html || '<strong>Edit</strong> me!'
+      html: this.props.initialHtml
     }
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange = (evt) => {
+  handleChange (evt) {
     this.setState({
       html: evt.target.value
     })
@@ -24,7 +24,36 @@ class Example extends React.Component {
         html={this.state.html}
         disabled={false}
         onChange={this.handleChange}
-        tagName={this.props.tagName}
+        tagName='h1'
+      />
+    )
+  }
+}
+
+export class Paragraph extends React.Component {
+  constructor (props) {
+    super(props)
+    this.contentEditable = React.createRef()
+    this.state = {
+      html: this.props.initialHtml
+    }
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange (evt) {
+    this.setState({
+      html: evt.target.value
+    })
+  }
+
+  render () {
+    return (
+      <ContentEditable
+        innerRef={this.contentEditable}
+        html={this.state.html}
+        disabled={false}
+        onChange={this.handleChange}
+        tagName='p'
         style={{
           textIndent: '2rem'
         }}
@@ -32,5 +61,3 @@ class Example extends React.Component {
     )
   }
 }
-
-export default Example

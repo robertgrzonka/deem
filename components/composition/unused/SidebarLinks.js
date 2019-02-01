@@ -1,5 +1,5 @@
-import ds from '../../../design/DesignSystem'
-import { Form } from '../content/Sidebar'
+import ds from '../../../../design/DesignSystem'
+import { Form } from './Sidebar'
 
 /**
  * Add new link to the links list.

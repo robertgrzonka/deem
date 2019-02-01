@@ -1,7 +1,8 @@
 {
   "version": 2,
   "name": "deem",
-  "builds": [{
+  "builds": [
+    {
       "src": "next.config.js",
       "use": "@now/next"
     },

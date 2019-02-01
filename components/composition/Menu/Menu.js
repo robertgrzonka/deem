@@ -10,7 +10,7 @@ const MenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: baseline;
-  overflow: scroll;
+  position: relative;
   @media (max-width: ${ds.bp('s')}) {
     width: 100vw;
   }

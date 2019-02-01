@@ -4,8 +4,8 @@ import colorPalette from './ColorPalette'
 const fontFamily = {
   system: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans"',
   sans: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
-  mono: 'Menlo, Monaco, "Courier New", monospace'
+  serif: '"Cormorant Garamond", "Cormorant SC", Georgia, "Times New Roman", Times, serif',
+  mono: '"Fora Mono", "Fira Code", Menlo, Monaco, "Courier New", monospace'
 }
 
 const transitions = {
@@ -26,12 +26,12 @@ export const designSystem = {
     baseFontSize: '18px',
 
     sizes: {
-      xs: '14px',
-      s: '16px',
+      xs: '12px',
+      s: '15px',
       base: '18px',
-      m: '22px',
-      l: '26px',
-      xl: '30px'
+      m: '24px',
+      l: '30px',
+      xl: '42px'
     },
 
     fontFamily,
@@ -54,9 +54,11 @@ export const designSystem = {
     },
 
     fontWeight: {
+      ultralight: 100,
       light: 300,
       normal: 400,
       bold: 500,
+      ultrabold: 900,
       headings: 700
     },
 
