@@ -10,7 +10,7 @@
 
 ## the Idea
 
-## Contributing
+## [Contributors](CONTRIBUTING.md)
 
 ## License
 
