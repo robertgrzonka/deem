@@ -8,9 +8,9 @@
 
 ## Table of Contents
 
-## Overview
+## the Idea
 
-## Idea
+## Contributing
 
 ## License
 
