@@ -2,7 +2,7 @@
 
 <img src="./static/logo/deem_wide.svg" width="40%"> 
 
-[![Build Status](https://travis-ci.com/robertgrzonka/deem.svg?branch=master)](https://travis-ci.com/robertgrzonka/deem) [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+[![Build Status](https://travis-ci.com/robertgrzonka/deem.svg?branch=master)](https://travis-ci.com/robertgrzonka/deem) [![codecov](https://codecov.io/gh/robertgrzonka/deem/branch/master/graph/badge.svg)](https://codecov.io/gh/robertgrzonka/deem) [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
 </div>
 
