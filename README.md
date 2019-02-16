@@ -4,13 +4,13 @@
 
 [![Build Status](https://travis-ci.com/robertgrzonka/deem.svg?branch=master)](https://travis-ci.com/robertgrzonka/deem) [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
-> More like editor, but I like to call it in a more <em>fancy</em> way. 
-
 </div>
 
 ## Table of Contents
 
 ## the Idea
+
+`deem` is more like editor, but I like to call it in a more _fancy_ way. What I need was a tool which will show me how my text will look like with different styles including colors, font weights oraz font sizes. Firstly written in pure JavaScript, but then became my sandbox.
 
 ## [Contributors](CONTRIBUTING.md)
 
