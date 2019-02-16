@@ -8,9 +8,9 @@
 
 ## Table of Contents
 
-## Overview
+## the Idea
 
-## Idea
+## [Contributors](CONTRIBUTING.md)
 
 ## License
 
