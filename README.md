@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="./static/logo/deem_wide.svg" width="40%">
+<img src="./static/logo/deem_wide.svg" width="40%"> 
+
+[![Build Status](https://travis-ci.com/robertgrzonka/deem.svg?branch=master)](https://travis-ci.com/robertgrzonka/deem) [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
 
 > More like editor, but I like to call it in a more <em>fancy</em> way. 
 
@@ -16,7 +18,7 @@
 
 MIT © [robertgrzonka](https://robertgrzonka.pl)
 
-## Contributors [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors)
+## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
