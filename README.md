@@ -8,10 +8,6 @@
 
 `deem` is more like editor, but I like to call it in a more _fancy_ way. What I need was a tool which will show me how my text will look like with different styles including colors, font weights oraz font sizes. Firstly written in pure JavaScript, but then became my sandbox.
 
-## License
-
-MIT © [robertgrzonka](https://robertgrzonka.pl)
-
 ## Contributors
 
 > <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="ForTheBadge!" />
@@ -25,3 +21,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. [Contributions of any kind welcome](CONTRIBUTING.md)!
+
+## License
+
+MIT © [robertgrzonka](https://robert.theguys.sh)
