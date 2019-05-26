@@ -58,6 +58,10 @@ const GlobalStyles = () =>
         border-radius: 0.25rem;
         appearance: none;
       }
+
+      select.disabled {
+        opacity: 0.5
+      }
       
       h1, h2, h3, h4, h5, h6 {
         font-family: ${ds.get('type.fontFamily.serif')};

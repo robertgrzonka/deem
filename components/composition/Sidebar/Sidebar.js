@@ -40,7 +40,7 @@ export const Form = (props) => {
     <div className='menu'>
       <Label htmlFor={name} id={name}>
         {name}
-        <select>
+        <select className='disabled' disabled>
           {listItems}
         </select>
       </Label>

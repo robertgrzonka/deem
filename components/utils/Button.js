@@ -15,7 +15,7 @@ const dynamicStyle = props => css`
     background-color: ${props.outline ? props.color || 'black' : 'white'};
     box-shadow: 0px 6px 15px ${props.color ? props.color : 'black'};
     color: ${props.outline ? 'white' : props.color || 'black'};
-    border: 0.01rem solid ${props.outline ? 'rgba(0,0,0,0.2)' : props.color};
+    border: 0.1em solid ${props.outline ? 'rgba(0,0,0,0.2)' : props.color};
   }
 `
 

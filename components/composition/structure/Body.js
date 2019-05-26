@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
-import { Sidebar } from '../Sidebar/Sidebar'
 import Menu from '../Menu/Menu'
+import { Sidebar } from '../Sidebar/Sidebar'
 import { Options } from '../Sidebar/SidebarLinks'
 
 const BodyStyle = styled.div`
